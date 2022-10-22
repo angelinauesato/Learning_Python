@@ -38,6 +38,14 @@ print(hw)  # prints "hello world"
 hw007 = '%s %s %03d' % (hello, world, 7)  # printf-style String Formatting
 print(hw007)  # prints "hello world"
 
+country = 'Italy'
+quantity = 4
+print(country, "won", quantity, "world title", sep=" ") #Italy won 4 world title
+
+day = 15
+month = 3
+year = 2020
+print(day, month, year, sep="/") #15/3/2020
 
 s = "hello"
 print(s.capitalize())  # Capitalize a string; prints "Hello"
