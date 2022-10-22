@@ -1,4 +1,5 @@
 #font: http://cs231n.github.io/python-numpy-tutorial/
+# Build in Functions: https://docs.python.org/3/library/functions.html
 
 #Number
 x = 3

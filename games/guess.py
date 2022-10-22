@@ -1,10 +1,14 @@
 # Class Starting with Python from www.alura.com.br
 # Python 3
+# Python Libraries: https://docs.python.org/3/library/
+
+import random
+
 print("**************************")
 print("Welcome to the Guess Game!")
 print("**************************")
 
-secret_number = 42
+secret_number = random.randrange(1, 101)
 total_try = 3
 got_right = False
 for tries in range(1, total_try+1): # range(start, stop, [step])
