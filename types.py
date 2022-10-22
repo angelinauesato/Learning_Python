@@ -61,6 +61,27 @@ print(hw.find('ll'))       # Prints "2" where the substring starts
 'll' in hw                 # Prints "True"
 print('  world '.strip())  # Strip leading and trailing whitespace; prints "world"
 
+# String interpolation
+# https://docs.python.org/3/library/string.html#formatexamples
+print("Tentativa {} de {}".format(1, 3))
+
+print("Tentativa {1} de {0}".format(1, 3))
+
+print("Cad$ {}".format(1.59))
+
+print("Cad$ {:f}".format(1.59))
+
+print("Cad$ {:.2f}".format(1.59))
+
+print("Cad$ {:.2f}".format(1.5))
+
+print("Cad$ {:7.2f}".format(1234.50))
+
+print("Cad$ {:07.2f}".format(1.5))
+
+print("Cad$ {:07d}".format(4))
+
+print("Date {:02d}/{:02d}".format(9, 4))
 
 #Containers
 #Python includes several built-in container types: lists, dictionaries, sets, and tuples.
