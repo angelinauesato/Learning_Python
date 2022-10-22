@@ -9,8 +9,20 @@ print("Welcome to the Guess Game!")
 print("**************************")
 
 secret_number = random.randrange(1, 101)
-total_try = 3
+total_try = 0
 got_right = False
+
+print("Level of difficulty: ")
+print(" 1 - Easy. \n 2 - Intermediate. \n 3 - Hard.")
+level = int(input("Enter the number of the level: "))
+
+if level == 1:
+    total_try = 20
+elif level == 2:
+    total_try = 10
+else:
+    total_try = 5
+
 for tries in range(1, total_try+1): # range(start, stop, [step])
     # String Interpolation
     # print("Round: {} of {}".format(tries, total_try))
