@@ -7,7 +7,8 @@ print("**************************")
 secret_number = 42
 total_try = 3
 tries = 0
-while tries < total_try:
+got_right = False
+while tries < total_try and (not got_right):
     tries += 1
     # String Interpolation
     # print("Round: {} of {}".format(tries, total_try))
