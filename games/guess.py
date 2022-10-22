@@ -11,6 +11,7 @@ print("**************************")
 secret_number = random.randrange(1, 101)
 total_try = 0
 got_right = False
+points = 1000
 
 print("Level of difficulty: ")
 print(" 1 - Easy. \n 2 - Intermediate. \n 3 - Hard.")
@@ -40,11 +41,13 @@ for tries in range(1, total_try+1): # range(start, stop, [step])
     bigger_guessed = secret_number < guess
 
     if got_right:
-        print("You got the right number!")
+        print(f"You got the right number and scored {points} points!")
         break
     else:
         if bigger_guessed:
             print("You got wrong! The secret number is less than guessed number!")
         else:
             print("You got wrong! The secret number is bigger than guessed number!")
+        lost_points = abs(secret_number - guess)
+        points = points - lost_points
 print("End of the game.")
