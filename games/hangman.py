@@ -1,11 +1,24 @@
 # https://docs.python.org/3.6/library/stdtypes.html#sequence-types-list-tuple-range
 
+import random
+
 def play():
     print("****************************")
     print("Welcome to the Hangman Game!")
     print("****************************")
     
-    secret_word = 'banana'
+    file = open('words.txt', 'r')
+    
+    words = []
+
+    for line in file:
+        words.append(line.strip())
+    file.close()
+        
+    number = random.randrange(0, len(words))
+    
+    secret_word = words[number]
+    
     correct_letters = ['_' for letter in secret_word]
 
     win = False
@@ -32,7 +45,8 @@ def play():
         if(not lost and win):
             print(f"Congratulations! You got it. {secret_word} was the secret word.")
             break
-        
+    if(lost and not win):
+        print(f"You lost! The word was: {secret_word}.")    
     print("End of the game.")
 if(__name__ == "__main__"):
     play()

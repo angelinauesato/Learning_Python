@@ -1,7 +1,7 @@
 import guess
 import hangman
 
-def choose_gane():
+def choose_game():
     print("****************************")
     print("*****Choose your Game!******")
     print("****************************")
@@ -16,4 +16,4 @@ def choose_gane():
         print("Starting Guess Number...")
         guess.play()
 if(__name__ == "__main__"):
-    choose_gane()
+    choose_game()
