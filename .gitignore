@@ -1,8 +1,2 @@
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
-.idea
-__pycache__
+.DS_Store
+pluralsight/myenv/*
